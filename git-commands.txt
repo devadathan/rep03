@@ -1,0 +1,34 @@
+eval "$(ssh-agent -s)"
+git status
+git clone git@github.com:devadathan/rep01.git
+cd .git/
+git status
+git add .
+git status
+git commit 
+git commit  -m "First Commit From CLI"  -m "Not much to describe"
+git status
+git push
+#adding new local repo
+git init
+git status
+git add ./
+git status
+git status
+git commit -m "New RepoLocal" -m "Nothing"
+git remote add origin git@github.com:devadathan/rep02.git
+git remote -v
+git push origin master
+
+git branch
+git checkout -b Test-Branch
+git branch
+git checkout master
+git branch
+git diff Test-Branch
+git checkout  Test-Branch
+git branch
+git checkout master
+git pull
+git branch -d Test-Branch
+
